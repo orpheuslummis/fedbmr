@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fedbmr = {editable = true, path = "."}
+numpyro = "*"
+jax = "*"
+matplotlib = "*"
+optax = "*"
+seaborn = "*"
+arviz = "*"
+fangorn = {git = "https://github.com/orpheuslummis/fangorn.git@orpheus/deps", rev = "main", editable = true}
+
+[dev-packages]
+ipykernel = "*"
+black = "*"
+
+[requires]
+python_version = "3.10"
